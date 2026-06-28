@@ -1,5 +1,5 @@
 import { consoleData } from "@/lib/site";
-import { Icon } from "./icons";
+import { Icon, Mark } from "./icons";
 
 export default function Console() {
   const d = consoleData;
@@ -7,7 +7,9 @@ export default function Console() {
     <div className="mock">
       <aside className="mk-side">
         <div className="mk-brand">
-          <span className="l">▲</span>
+          <span className="l">
+            <Mark />
+          </span>
           <span>
             <b>{d.brand}</b>
             <small>{d.tag}</small>

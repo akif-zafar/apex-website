@@ -1,4 +1,5 @@
 import { footer, nav, contact } from "@/lib/site";
+import { Mark } from "./icons";
 
 export default function Footer() {
   return (
@@ -7,7 +8,9 @@ export default function Footer() {
         <div className="fgrid">
           <div className="fbrand">
             <a className="brand" href="/">
-              <span className="logo">▲</span>
+              <span className="logo">
+                <Mark />
+              </span>
               {nav.brandTop}&nbsp;<span className="light">{nav.brandBottom}</span>
             </a>
             <p>{footer.blurb}</p>

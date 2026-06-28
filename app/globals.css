@@ -15,9 +15,9 @@
   --bg:#FAFAFB; --bg-2:#FFFFFF; --bg-3:#F2F2F4;
   --fg:#161619; --muted:#6A6A72; --subtle:#A0A0A8;
   --line:#E9E9ED; --line-2:#DCDCE2;
-  --accent:#F4593C; --accent-h:#E0472E; --accent-fg:#FFFFFF;
-  --accent-tint:rgba(244,89,60,.10); --accent-text:#C5402A;
-  --glow-cool:rgba(120,140,255,.10); --glow-warm:rgba(244,89,60,.07);
+  --accent:#FF6F45; --accent-h:#F2542D; --accent-fg:#FFFFFF;
+  --accent-tint:rgba(255,111,69,.10); --accent-text:#C5402A;
+  --glow-cool:rgba(120,140,255,.10); --glow-warm:rgba(255,111,69,.07);
   --nav-bg:rgba(255,255,255,.72); --nav-border:rgba(20,20,30,.08); --nav-hover:rgba(20,20,30,.05);
   --nav-shadow:0 8px 24px rgba(20,20,30,.08); --nav-shadow-lg:0 14px 40px rgba(20,20,30,.13);
   --dot:rgba(18,18,26,.05); --vig:transparent;
@@ -25,7 +25,7 @@
   /* console mockup */
   --mk-canvas:#FFFFFF; --mk-surface:#FFFFFF; --mk-surface2:#F4F4F6; --mk-fg:#161619;
   --mk-muted:#6A6A72; --mk-subtle:#A0A0A8; --mk-line:#ECECF0;
-  --mk-acc:#F4593C; --mk-apill:rgba(244,89,60,.11); --mk-afg:#B83A22;
+  --mk-acc:#FF6F45; --mk-apill:rgba(255,111,69,.11); --mk-afg:#B83A22;
   --mk-shadow:0 30px 60px rgba(20,20,30,.12), 0 6px 14px rgba(20,20,30,.06); --mk-edge:#ECECF0;
   --ok-bg:#DBF3E3;--ok-fg:#167A44;--ok-dot:#2FB46C;
   --go-bg:#DCEBFF;--go-fg:#1763B8;--go-dot:#3B9EFF;
@@ -37,16 +37,16 @@ html.dark{
   --bg:#0A0A0B; --bg-2:#161619; --bg-3:#202024;
   --fg:#F5F5F7; --muted:#9A9AA2; --subtle:#62626A;
   --line:rgba(255,255,255,.08); --line-2:rgba(255,255,255,.13);
-  --accent:#FF6A4D; --accent-h:#FF7D63; --accent-fg:#190D08;
-  --accent-tint:rgba(255,106,77,.14); --accent-text:#FF9D86;
-  --glow-cool:rgba(90,110,255,.18); --glow-warm:rgba(255,106,77,.10);
+  --accent:#FF6F45; --accent-h:#FF8A5B; --accent-fg:#190D08;
+  --accent-tint:rgba(255,111,69,.14); --accent-text:#FF9D86;
+  --glow-cool:rgba(90,110,255,.18); --glow-warm:rgba(255,111,69,.10);
   --nav-bg:rgba(24,24,28,.62); --nav-border:rgba(255,255,255,.10); --nav-hover:rgba(255,255,255,.07);
   --nav-shadow:0 10px 30px rgba(0,0,0,.4); --nav-shadow-lg:0 16px 44px rgba(0,0,0,.55);
   --dot:rgba(255,255,255,.05); --vig:rgba(0,0,0,.4);
 
   --mk-canvas:#141417; --mk-surface:#1B1B1F; --mk-surface2:#232328; --mk-fg:#F5F5F7;
   --mk-muted:#9A9AA2; --mk-subtle:#62626A; --mk-line:rgba(255,255,255,.08);
-  --mk-acc:#FF6A4D; --mk-apill:rgba(255,106,77,.15); --mk-afg:#FF9D86;
+  --mk-acc:#FF6F45; --mk-apill:rgba(255,111,69,.15); --mk-afg:#FF9D86;
   --mk-shadow:0 40px 80px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.05); --mk-edge:rgba(255,255,255,.06);
   --ok-bg:rgba(47,180,108,.16);--ok-fg:#5FE39A;--ok-dot:#2FB46C;
   --go-bg:rgba(59,158,255,.16);--go-fg:#7AB6FF;--go-dot:#3B9EFF;
@@ -83,6 +83,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--fg);
 .brand{display:flex;align-items:center;gap:9px;font-weight:600;font-size:15.5px;letter-spacing:-.01em;color:var(--fg);text-decoration:none}
 .brand .logo{width:26px;height:26px;border-radius:7px;background:var(--accent);color:var(--accent-fg);
   display:grid;place-items:center;font-size:13px;box-shadow:0 6px 18px var(--accent-tint)}
+.brand .logo svg{width:15px;height:auto;display:block;fill:#1A0F0A}
 .brand .light{color:var(--muted);font-weight:500}
 .nav .brand{justify-self:start}
 .nav .links{justify-self:center;display:flex;gap:2px;font-size:13.5px}
@@ -150,6 +151,7 @@ h1 .accent{color:var(--accent-text)}
 .mk-side{width:182px;flex:none;padding:16px 12px;border-right:1px solid var(--mk-line);display:flex;flex-direction:column;gap:3px}
 .mk-brand{display:flex;align-items:center;gap:9px;padding:4px 6px 14px}
 .mk-brand .l{width:24px;height:24px;border-radius:7px;background:var(--mk-acc);color:#fff;display:grid;place-items:center;font-size:12px;font-weight:600}
+.mk-brand .l svg{width:14px;height:auto;display:block;fill:#1A0F0A}
 .mk-brand b{font-size:13px;font-weight:600;display:block;line-height:1.2;color:var(--mk-fg)}
 .mk-brand small{font-family:var(--mono);font-size:8.5px;letter-spacing:.1em;color:var(--mk-subtle);text-transform:uppercase}
 .mk-seg{font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--mk-subtle);padding:12px 8px 6px}

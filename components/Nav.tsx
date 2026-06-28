@@ -1,13 +1,16 @@
 import { nav } from "@/lib/site";
 import ThemeToggle from "./ThemeToggle";
 import MobileMenu from "./MobileMenu";
+import { Mark } from "./icons";
 
 export default function Nav() {
   return (
     <header className="nav" id="nav">
       <div className="inner">
         <a className="brand" href="/">
-          <span className="logo">▲</span>
+          <span className="logo">
+            <Mark />
+          </span>
           {nav.brandTop}&nbsp;<span className="light">{nav.brandBottom}</span>
         </a>
         <nav className="links">

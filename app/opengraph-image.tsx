@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import { APEX_MARK_PATH } from "@/components/icons";
 
 export const alt = "Apex Technologies — Managed IT, Cloud & Software";
 export const size = { width: 1200, height: 630 };
@@ -22,17 +23,17 @@ export default function OpengraphImage() {
         <div style={{ display: "flex", alignItems: "center" }}>
           <div
             style={{
-              width: 64,
-              height: 64,
-              borderRadius: 16,
-              background: "#FF6A4D",
+              width: 72,
+              height: 72,
+              borderRadius: 18,
+              background: "linear-gradient(135deg, #FF8A5B, #F2542D)",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
             }}
           >
-            <svg width="36" height="36" viewBox="0 0 32 32">
-              <path d="M16 7.5 L24.5 24 H7.5 Z" fill="#190D08" />
+            <svg width="46" height="27" viewBox="0 0 327 192" fill="#1A0F0A">
+              <path fillRule="evenodd" d={APEX_MARK_PATH} />
             </svg>
           </div>
           <div style={{ display: "flex", marginLeft: 22, fontSize: 36 }}>
