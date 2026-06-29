@@ -13,6 +13,34 @@ export function Mark() {
   );
 }
 
+// Full horizontal lockup: mark + wordmark + "AUSTRALIA". Colours follow the
+// theme tokens so the single component works on both light and dark backgrounds.
+// Source: apex-brand/logo-horizontal.
+export function HorizontalLogo() {
+  return (
+    <svg
+      className="hlogo"
+      viewBox="0 0 600 100"
+      fill="none"
+      aria-hidden="true"
+      style={{ fontFamily: "var(--font)" }}
+    >
+      <g transform="translate(0 20) scale(0.3125)">
+        <path fill="var(--accent)" fillRule="evenodd" d={APEX_MARK_PATH} />
+      </g>
+      <text x="126" y="58" fontSize="38" fontWeight="700" letterSpacing="0.5" fill="var(--fg)">
+        APEX{" "}
+        <tspan fontWeight="300" letterSpacing="2" fill="var(--muted)">
+          TECHNOLOGIES
+        </tspan>
+      </text>
+      <text x="127" y="80" fontSize="12" fontWeight="500" letterSpacing="6" fill="var(--accent)">
+        AUSTRALIA
+      </text>
+    </svg>
+  );
+}
+
 export function Sun() {
   return (
     <svg className="sun" viewBox="0 0 24 24">

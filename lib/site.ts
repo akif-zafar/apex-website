@@ -11,17 +11,19 @@ export const siteUrl = "https://apextechnologies.com.au";
 export const nav = {
   brandTop: "Apex",
   brandBottom: "Technologies",
-  // One-pager nav: every link points to a real on-page section.
-  // Re-add Work / About / Pricing here when those pages exist.
+  // Nav links. Services/Contact map to on-page sections; About/Pricing are
+  // placeholders pointing to #about / #pricing — add those sections (or real
+  // pages) and these will work. Update the hrefs if you move them to routes.
   links: [
+    { label: "About", href: "#about" },
     { label: "Services", href: "#services" },
+    { label: "Pricing", href: "#pricing" },
     { label: "Contact", href: "#contact" },
   ],
   cta: { label: "Book a call", href: "#contact" },
 };
 
 export const hero = {
-  eyebrow: "Managed IT · Data · Software",
   titleLine1: "We run your IT.",
   titleLine2: "And build what's missing.",
   sub: "Managed support, secure Microsoft 365, data migration, and custom software for businesses that can't afford downtime. One Sydney team — from the strategy call to the 2am fix.",
@@ -76,7 +78,6 @@ export const consoleData = {
 };
 
 export const services = {
-  tag: "What we do",
   title: "Two ways we work.",
   intro:
     "Keep the lights on, or build something new. Most clients do both — one team that already knows your environment, whichever side you need.",
@@ -135,9 +136,9 @@ export const closing = {
 // `email` receives form enquiries and is shown as the "Email us" link.
 // `phone` is the tel: target (E.164, no spaces); `phoneDisplay` is what's shown.
 export const contact = {
-  email: "hello@apextechnologies.com.au",
-  phone: "+61200000000",
-  phoneDisplay: "(02) 0000 0000",
+  email: "contact@apextechnologies.com.au",
+  phone: "+61450400866",
+  phoneDisplay: "+61 450 400 866",
   abn: "00 000 000 000",
 };
 

@@ -1,17 +1,14 @@
 import { nav } from "@/lib/site";
 import ThemeToggle from "./ThemeToggle";
 import MobileMenu from "./MobileMenu";
-import { Mark } from "./icons";
+import { HorizontalLogo } from "./icons";
 
 export default function Nav() {
   return (
     <header className="nav" id="nav">
       <div className="inner">
-        <a className="brand" href="/">
-          <span className="logo">
-            <Mark />
-          </span>
-          {nav.brandTop}&nbsp;<span className="light">{nav.brandBottom}</span>
+        <a className="brand brand-logo" href="/" aria-label={`${nav.brandTop} ${nav.brandBottom} — home`}>
+          <HorizontalLogo />
         </a>
         <nav className="links">
           {nav.links.map((l) => (

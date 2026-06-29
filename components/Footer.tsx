@@ -1,5 +1,5 @@
 import { footer, nav, contact } from "@/lib/site";
-import { Mark } from "./icons";
+import { HorizontalLogo } from "./icons";
 
 export default function Footer() {
   return (
@@ -7,11 +7,8 @@ export default function Footer() {
       <div className="wrap">
         <div className="fgrid">
           <div className="fbrand">
-            <a className="brand" href="/">
-              <span className="logo">
-                <Mark />
-              </span>
-              {nav.brandTop}&nbsp;<span className="light">{nav.brandBottom}</span>
+            <a className="brand brand-logo" href="/" aria-label={`${nav.brandTop} ${nav.brandBottom} — home`}>
+              <HorizontalLogo />
             </a>
             <p>{footer.blurb}</p>
           </div>

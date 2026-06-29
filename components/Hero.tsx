@@ -1,12 +1,10 @@
 import { hero } from "@/lib/site";
-import Console from "./Console";
 
 export default function Hero() {
   return (
     <div className="wrap">
       <section className="hero">
         <div className="copy">
-          <div className="eyebrow">{hero.eyebrow}</div>
           <h1>
             {hero.titleLine1}
             <br />
@@ -30,10 +28,7 @@ export default function Hero() {
             {hero.trust}
           </div>
         </div>
-
-        <div className="visual">
-          <Console />
-        </div>
+        {/* Image / product visual goes here later, below the copy. */}
       </section>
     </div>
   );

@@ -7,7 +7,6 @@ export default function Services() {
     <div className="wrap">
       <section className="section" id="services">
         <div className="shead reveal">
-          <div className="tag">{s.tag}</div>
           <h2>{s.title}</h2>
           <p>{s.intro}</p>
           <div className="chips">
